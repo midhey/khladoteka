@@ -1,0 +1,14 @@
+/* HEADER */
+
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-bar-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
