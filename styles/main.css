@@ -17,6 +17,16 @@ li {
     flex-direction: row;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
 .align-center {
     align-items: center;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
 }

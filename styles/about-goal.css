@@ -1,0 +1,15 @@
+.about-goal {
+    background-color: #151515;
+}
+
+.about {
+    color: white;
+    max-width: 640px;
+}
+
+.about p {
+    font-family: Onest, serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+}

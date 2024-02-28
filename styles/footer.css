@@ -1,0 +1,125 @@
+.footer {
+    background-color: #F5F5F5;
+}
+
+.footer-main {
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.footer-contacts header {
+    max-width: 264px;
+    margin-bottom: 30px;
+}
+
+.footer-contacts header p {
+    font-family: Onest, serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #808080;
+    margin-top: 12px;
+}
+
+.footer-contacts main div p {
+    margin-left: 12px;
+    color: #404040;
+}
+
+.footer-contacts main div:nth-child(2) {
+    margin: 15px 0;
+}
+
+.footer-contacts main div:nth-child(2) p {
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.footer-contacts main div:nth-child(2) p span {
+    font-size: 12px;
+    line-height: 14.4px;
+}
+
+.footer-contacts main div:last-child p {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.footer-contacts main div img {
+    width: 14px;
+}
+
+.footer-contacts main div p {
+    font-family: Onest, serif;
+    font-weight: 500;
+    line-height: 21.6px;
+    font-size: 18px;
+    color: #404040;
+}
+
+.footer-menu h5 {
+    font-family: Onest, serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    color: #808080;
+    margin-bottom: 20px;
+}
+
+.footer-menu ul li a {
+    color: #404040;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 400;
+    font-family: Onest, serif;
+}
+
+.footer-menu ul li {
+    margin: 12px 0;
+}
+
+.footer-copyright {
+    height: 77px;
+    background-color: #E12026;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-copyright .row {
+    justify-content: space-between;
+}
+
+.footer-copyright div p, .footer-copyright div p a {
+    font-family: Onest, serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    margin: 0 15px;
+}
+
+.footer-copyright div p a {
+    color: white;
+}
+
+.footer-copyright div p a span {
+    text-decoration: underline;
+}
+
+.footer-copyright div p:first-child {
+    margin-right: 0;
+}
+
+.footer-copyright div p:last-child {
+    margin-left: 0;
+}
+
+.social-links li a img {
+    height: 16px;
+}
+
+.social-links li:nth-child(2) {
+    margin: 0 20px;
+}
+
