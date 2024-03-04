@@ -35,16 +35,17 @@
 }
 
 .articles section a {
+    width: 100%;
     position: absolute;
     color: #FFF;
-    font-family: Raleway;
+    font-family: Raleway, serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 16.8px */
     text-transform: uppercase;
     bottom: 18px;
-    left: 50px;
+    padding: 30px;
     vertical-align: middle;
 }
 
@@ -57,14 +58,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -20px;
 }
 
 .articles section:hover a:before {
-    height: 1px;
-    width: 300px;
+    flex-grow: 4;
 }
 
 .articles section:hover a span {
-    left: 350px;
+    flex-grow: 4;
 }
