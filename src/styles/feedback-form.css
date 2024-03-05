@@ -1,0 +1,9 @@
+.container-form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.container-form .row {
+    display: flex;
+}

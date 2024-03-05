@@ -1,0 +1,18 @@
+{
+  "name": "khladoteka-vite",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.1.4",
+    "vituum": "^1.1.0",
+    "@vituum/vite-plugin-posthtml": "^1.1.0"
+  },
+  "author": "midhey",
+  "license": "ISC"
+}

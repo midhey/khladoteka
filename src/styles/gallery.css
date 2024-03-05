@@ -1,0 +1,89 @@
+.gallery h1 {
+    margin: 164px auto 60px;
+}
+
+.gallery-photo {
+    height: 660px;
+    width: 30%;
+    overflow: hidden;
+    margin: 0 3px;
+}
+
+.gallery-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-photo {
+    max-width: 600px;
+    width: 70%;
+    margin-left: 0;
+}
+
+.gallery-panel {
+    display: flex;
+    margin-top: 6px;
+}
+
+.gallery-panel a {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    background-color: #101010;
+    color: #FFF;
+    font-family: Onest, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    text-transform: uppercase;
+    gap: 10px;
+}
+
+.gallery-panel a:hover {
+    background-color: #E12026;
+}
+
+.gallery-panel a svg {
+    width: 16px;
+    height: 16px;
+}
+
+.gallery-panel button {
+    width: 80px;
+    height: 80px;
+    background-color: #101010;
+    background-image: url("/src/assets/gallery/arrow-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.gallery-panel button:hover {
+    background-color: #E12026;
+}
+
+#gallery-button-next {
+    transform: rotate(180deg);
+}
+
+.gallery-counter {
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 230px;
+}
+
+.gallery-counter p {
+    text-align: center;
+    color: #FFF;
+    font-family: Molot;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 36px */
+}

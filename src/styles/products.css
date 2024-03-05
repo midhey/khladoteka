@@ -1,10 +1,4 @@
 .products h1 {
-    font-family: Molot, serif;
-    font-size: 64px;
-    background: linear-gradient(90deg, rgba(111,117,128,1) 0%, rgba(77,87,105,1) 100%);
-    background-clip: text;
-    color: transparent;
-    text-align: center;
     line-height: 89.6px;
     margin-top: 153px;
     margin-bottom: 60px;
