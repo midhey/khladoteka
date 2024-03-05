@@ -1,0 +1,58 @@
+@import "about-goal.css";
+@import "about-numbers.css";
+@import "articles.css";
+@import "fonts.css";
+@import "footer.css";
+@import "header.css";
+@import "products.css";
+@import "video-preview.css";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    outline: none;
+}

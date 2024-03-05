@@ -1,0 +1,62 @@
+
+.about-goal::before,
+.about-goal::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    background-color: #151515;
+}
+
+.about-goal::before {
+    top: 0;
+    left: 0;
+    transform: skewY(5.85deg);
+}
+
+.about-goal::after {
+    bottom: 0;
+    right: 0;
+    transform: skewY(4.13deg);
+}
+
+.about-goal {
+    position: relative;
+    overflow: visible;
+    height: 200%;
+    padding: 200px 0;
+    z-index: 1;
+    margin-top: 202px;
+}
+
+.about {
+    color: white;
+    max-width: 640px;
+}
+
+.about p {
+    font-family: Onest, serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.about button {
+    font-family: Onest, serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    width: 200px;
+    height: 50px;
+    background-color: #E12026;
+    color: white;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.about button::after {
+    content: url("../assets/other/arrow-right.svg");
+    width: 18px;
+    margin-left: 12px;
+}
