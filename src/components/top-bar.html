@@ -1,38 +1,70 @@
 <header class="header">
     <div class="container top-menu">
-        <img src="/src/assets/logo.svg" alt="Хладотека">
-        <ul class="row align-center top-bar-menu">
-            <li>
-                <a href="">Продукция</a>
+        <a href="" class="row align-center"><img src="/src/assets/logo.svg" alt="Хладотека"></a>
+        <input class="top-menu-btn" type="checkbox" id="top-menu-btn"/>
+        <label class="top-menu-icon" for="top-menu-btn">
+                <span class="top-menu-hamburger-icon"></span>
+        </label>
+        <nav>
+            <ul class="row align-center top-bar-menu top-menu-ul">
+                <li><input type="search" id="site-search" placeholder="Поиск"/></li>
+                <li><a href="">Продукция</a></li>
+                <li class="dropdown-btn">
+                    <a href="#" class="desktop-trigger">О компании <span class="icon icon-triangle dropdown-icon"></span></a>
+                    <div class="dropdown dropdown-company">
+                        <ul>
+                            <li><a href="#">Наша компания</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Стать партнером</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="">Сервис и доставка</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="row align-center menu-icon top-menu-ul">
+            <li class="scroll-to-top-btn">
+                <span class="icon icon-triangle"></span>
+            </li>
+            <li class="search-wrap">
+                <form>
+                    <input type="search" class="menu-icon-search" placeholder="Поиск">
+                </form>
+                <a class="search-icon"><span class="icon icon-search"></span></a>
             </li>
             <li>
-                <a href="">О компании</a>
+                <a href=""><span class="icon icon-comparison"></span></a>
             </li>
             <li>
-                <a href="">Сервис и доставка</a>
+                <a href=""><span class="icon icon-heart"></span></a>
             </li>
-            <li>
-                <a href="">Новости</a>
-            </li>
-            <li>
-                <a href="">Контакты</a>
-            </li>
-        </ul>
-        <ul class="row align-center menu-icon">
-            <li class="menu-icon">
-                <a href=""><img src="src/assets/header/search_icon.svg" alt="search"></a>
-            </li>
-            <li class="menu-icon">
-                <a href=""><img src="src/assets/header/_icon.svg" alt=""></a>
-            </li>
-            <li class="menu-icon">
-                <a href=""><img src="src/assets/header/favourite_icon.svg" alt="favourite"></a>
-            </li>
-            <li>
-                <a href="" class="row align-center">
-                    <img src="src/assets/header/person_icon.svg" alt="profile">
-                    <p>Личный кабинет</p>
-                </a>
+            <li class="dropdown-btn desktop-trigger">
+                <div class="account-icon">
+                    <span class="icon icon-person"></span>
+                    <div class="account-text ">
+                        Личный кабинет
+                    </div>
+                </div>
+                <div class="dropdown dropdown-account">
+                    <div class="account-user">
+                        <span class="account-user-name">Иван Иванов</span>
+                        <span class="account-user-phone">+7 999 999-99-99</span>
+                    </div>
+                    <ul class="account-links">
+                        <li><a href="#"><span class="icon icon-person not-after"></span>Мой кабинет</a></li>
+                        <li><a href="#">Мои заявки</a></li>
+                    </ul>
+                    <ul class="account-optional-link">
+                        <li><a href="#">Стать партнером</a></li>
+                        <li><a href="#">Гарантия и возврат</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
             </li>
         </ul>
     </div>

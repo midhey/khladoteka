@@ -1,27 +1,35 @@
 <footer class="footer">
     <div class="row container footer-main">
         <div class="footer-contacts">
-            <header>
+            <div class="footer-contacts-logo">
                 <img src="src/assets/logo.svg" alt="Хладотека">
                 <p>Профессиональное оборудование для предприятий общественного питания и торговли</p>
-            </header>
-            <main>
+            </div>
+            <div class="footer-contacts-main">
                 <div class="row">
-                    <img src="src/assets/footer/email_icon.svg" alt="email">
-                    <p>office@.ru</p>
+                    <a href="mailto:office@.ru">
+                        <span class="icon icon-mail"></span>
+                        office@.ru
+                    </a>
                 </div>
                 <div class="row">
-                    <img src="src/assets/footer/phone_icon.svg" alt="phone">
-                    <p>+7 (999) 909-09-90 <br> <span>(звонок по России бесплатный)</span></p>
+                    <a href="tel:+79999090990">
+                        <span class="icon icon-phone"></span>
+                        <div class="footer-contacts-main-phone">
+                            +7 (999) 909-09-90 <br> <span>(звонок по России бесплатный)</span>
+                        </div>
+                    </a>
                 </div>
                 <div class="row">
-                    <img src="src/assets/footer/marker_icon.svg" alt="location">
-                    <p>Россия, </p>
+                    <a href="#">
+                        <span class="icon icon-marker"></span>
+                        <span class="footer-contacts-main-address">Россия,</span>
+                    </a>
                 </div>
-            </main>
+            </div>
         </div>
-        <div class="footer-company footer-menu">
-            <h5>Компания</h5>
+        <nav class="footer-company footer-menu" id="companyMenu">
+            <span class="footer-menu-title">Компания <span class="icon icon-triangle dropdown-icon"></span> </span>
             <ul>
                 <li>
                     <a href="">О компании</a>
@@ -42,9 +50,9 @@
                     <a href="">Вакансии</a>
                 </li>
             </ul>
-        </div>
-        <div class="footer-clients footer-menu">
-            <h5>Клиентам</h5>
+        </nav>
+        <nav class="footer-clients footer-menu" id="clientsMenu">
+            <span class="footer-menu-title">Клиентам <span class="icon icon-triangle dropdown-icon"></span> </span>
             <ul>
                 <li>
                     <a href="">Личный кабинет</a>
@@ -56,9 +64,9 @@
                     <a href="">Статьи</a>
                 </li>
             </ul>
-        </div>
-        <div class="footer-production footer-menu">
-            <h5>Продукция</h5>
+        </nav>
+        <nav class="footer-production footer-menu" id="productionMenu">
+            <span class="footer-menu-title">Продукция <span class="icon icon-triangle dropdown-icon"></span> </span>
             <ul>
                 <li>
                     <a href="">Холодильные шкафы</a>
@@ -70,17 +78,17 @@
                     <a href="">Пивоохладители</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </div>
     <div class="footer-copyright">
-        <div class="container row">
-            <div class="row">
+        <div class="container">
+            <div class="footer-copyright-info">
                 <p>Ⓒ 2023 Все права защищены</p>
                 <p>Обработка персональных данных</p>
                 <p>Политика конфиденциальности</p>
                 <p><a href=""><span class="kuratov-link">Создание сайта</span> - kuratov.ru</a></p>
             </div>
-            <ul class="social-links row">
+            <ul class="social-links">
                 <li>
                     <a href="">
                         <img src="src/assets/footer/social_vk_icon.png" alt="vk">

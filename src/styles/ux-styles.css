@@ -1,0 +1,11 @@
+@import "./ux-components/ux-buttons.css";
+
+.text-p {
+    color: #202020;
+    font-family: Onest;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+    letter-spacing: 0.22px;
+}

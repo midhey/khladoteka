@@ -1,0 +1,294 @@
+.header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F0F0F0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.top-menu {
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Onest", sans-serif;
+    font-size: 14px;
+    position: relative;
+}
+
+.top-menu nav {
+    height: 100%;
+}
+
+.top-menu-ul {
+    height: 100%;
+}
+
+.top-menu-ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-menu-ul li:not(.scroll-to-top-btn) {
+    height: 100%;
+}
+
+.top-menu-ul li a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-menu-ul li a span {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.top-menu-ul li a span:before {
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.1s;
+}
+
+.menu-icon {
+    position: relative;
+}
+
+.scroll-to-top-btn {
+    border: none;
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+    height: auto;
+}
+
+.scroll-to-top-btn span:before {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #E12026;
+}
+
+.menu-icon li:nth-child(2):hover a span:before {
+    color: #E12026;
+}
+
+.menu-icon li:nth-child(3):hover a span:before {
+    display: inline-block;
+    transform: scaleX(-1);
+    color: #0084BF;
+}
+
+.menu-icon li:nth-child(4):hover a span:before {
+    color: #C91215;
+}
+
+.menu-icon li a {
+    width: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-icon li:last-child {
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-icon li:last-child div:first-child:not(.account-user) {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.account-text {
+    margin: 0!important;
+}
+
+.menu-icon li:last-child div span {
+    width: auto;
+    font-size: 18px;
+}
+
+/* Отступ между иконкой и надписью "Личный кабинет" */
+.menu-icon li:last-child a img {
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+.menu-icon li:not(.scroll-to-top-btn) {
+    border-left: 1px solid #F0F0F0;
+}
+
+.top-bar-menu {
+    gap:40px;
+}
+
+.top-bar-menu li {
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.1s;
+}
+
+.top-bar-menu li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #E12026;
+    transform-origin: bottom right;
+    transition: height 0.1s;
+}
+
+.top-bar-menu li:hover::after {
+    height: 2px; /* Высота линии при наведении */
+}
+
+.search-wrap {
+    flex-direction: row!important;
+}
+
+.search-wrap .search-icon {
+    cursor: pointer;
+}
+
+.menu-icon-search {
+    display: none;
+    height: 100%;
+    background: #FFF;
+}
+
+.top-menu .search-active {
+    background-color: #333;
+}
+
+.top-bar-menu.hidden {
+    display: none;
+}
+
+.menu-icon-search.active {
+    display: flex;
+    padding: 0 23px;
+    width: 650px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-left: 1px solid #F0F0F0;
+}
+
+.menu-icon-search.active:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 1279px) {
+    .menu-icon li:last-child div:first-child:not(.account-user) {
+        margin-left: 10px;
+    }
+
+    .top-bar-menu {
+        gap: 20px;
+    }
+
+    .menu-icon li a {
+        width: 45px;
+    }
+
+    .menu-icon-search.active {
+        max-width: 550px;
+    }
+}
+
+/* Стили для отображения меню-icon внизу на экранах < 768px */
+@media screen and (max-width: 990px) {
+    .menu-icon {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff; /* Пример фона для видимости на светлом фоне */
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+        max-height: 60px;
+    }
+
+    .menu-icon li {
+        width: 25%;
+    }
+
+    .scroll-to-top-btn {
+        position: relative;
+        width: 25%;
+        height: 100%;
+        bottom: auto;
+    }
+
+    .menu-icon li a {
+        width: 100%;
+    }
+
+    .menu-icon li span {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 6px;
+    }
+
+    .menu-icon li .icon, .menu-icon li .icon:before {
+        width: 100%;
+        text-align: center;
+    }
+
+    .scroll-to-top-btn span, .scroll-to-top-btn span:before {
+        height: 100%;
+    }
+
+    .menu-icon li span:after {
+        color: #202020;
+        font-family: Onest;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .menu-icon li .icon-comparison:after {
+        content: "Избранное";
+
+    }
+
+    .menu-icon li .icon-heart:after {
+        content: "Сравнение";
+
+    }
+
+    .menu-icon li .icon-person:before {
+        color: #606060;
+    }
+
+    .menu-icon li .icon-person:not(.not-after):after {
+        content: "Кабинет";
+    }
+
+    .menu-icon li.search-wrap {
+        display: none;
+    }
+
+}
+

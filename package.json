@@ -4,14 +4,28 @@
   "type": "module",
   "description": "",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "serve": "vite preview"
   },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 ie version"
+    ]
+  },
   "devDependencies": {
+    "@vituum/vite-plugin-posthtml": "^1.1.0",
+    "autoprefixer": "^10.4.18",
     "vite": "^5.1.4",
-    "vituum": "^1.1.0",
-    "@vituum/vite-plugin-posthtml": "^1.1.0"
+    "vituum": "^1.1.0"
   },
   "author": "midhey",
   "license": "ISC"

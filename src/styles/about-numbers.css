@@ -2,18 +2,18 @@
     margin-top: -2%;
 }
 
-.about-numbers header {
+.about-numbers-title {
     background-color: #151515;
     height: 330px;
     transform: skewY(-1.52deg);
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
 }
 
-.about-numbers header h1 {
+.about-numbers-title span {
     color: #FFF;
     font-family: Molot, serif;
     font-size: 64px;
@@ -25,8 +25,7 @@
     margin-bottom: 50px;
 }
 
-.about-numbers main {
-    align-items: center;
+.about-numbers .container {
     margin-top: 110px;
     margin-bottom: 225px;
 }
@@ -36,14 +35,22 @@
     flex-direction: column;
     justify-content: center;
     width: 18%;
+    height: max-content;
 }
 
-.about-numbers-block img {
-    height: 32px;
+.about-numbers-block .icon {
+    text-align: center;
 }
 
-.about-numbers-block h2 {
-    margin: 20px 0;
+.about-numbers-block .icon:before {
+    font-size: 32px;
+}
+
+.about-numbers-block div:nth-child(2) {
+    position: relative;
+    width: max-content;
+    height: max-content;
+    margin: 20px auto;
     background: linear-gradient(180deg, #6F7580 0%, #4D5769 100%);
     background-clip: text;
     text-align: center;
@@ -51,17 +58,24 @@
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
-    line-height: 120%;
     letter-spacing: 1.28px;
+    line-height: 100%;
     color: transparent;
 }
 
-.about-numbers-block h2 span {
+.about-numbers-block div:nth-child(2) span {
     font-size: 32px;
-    height: 100%;
+    line-height: 100%;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    right: -45px;
+    background: linear-gradient(180deg, #6F7580 0%, #4D5769 100%);
+    background-clip: text;
+    color: transparent;
 }
 
-.about-numbers-block p {
+.about-numbers-block div:last-child {
     color: #202020;
     text-align: center;
     font-family: Onest;
@@ -75,4 +89,53 @@
     width: 1px;
     height: 100px;
     background: #DDD;
+}
+
+@media screen and (max-width: 1071px) {
+    .about-numbers .row {
+        gap: 30px 10px;
+    }
+
+    .about-numbers-block {
+        width: 48%;
+    }
+
+    .about-numbers .row .divider {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-numbers {
+        margin-top: -6%;
+    }
+
+    .about-numbers-title {
+        transform: skewY(-5.551deg);
+        height: 300px;
+    }
+
+    .about-numbers-title span {
+        font-size: 32px;
+        transform: skewY(5.551deg) rotate(-5.551deg);
+        margin-bottom: 0;
+    }
+
+    .about-numbers-block .icon:before {
+        font-size: 20px;
+    }
+
+    .about-numbers-block div:nth-child(2) {
+        font-size: 32px;
+    }
+
+    .about-numbers-block div:nth-child(2) span {
+        font-size: 16px;
+        right: -25px;
+    }
+
+    .about-numbers-block div:last-child {
+        font-size: 12px;
+        line-height: 120%;
+    }
 }

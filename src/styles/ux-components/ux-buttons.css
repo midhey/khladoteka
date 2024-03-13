@@ -1,0 +1,74 @@
+.button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 15px;
+    align-items: center;
+    flex-shrink: 0;
+    background: #E12026;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: #FFF;
+    font-family: Onest;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button-production span:before {
+    font-size: 18px;
+}
+
+.button-production {
+    justify-content: center;
+    gap: 12px;
+}
+
+.button-feedback {
+    justify-content: space-between;
+    border-bottom: 2px solid #E12026;
+}
+
+.button:hover {
+    background: #FFF;
+    color: #E12026;
+}
+
+.button-production:hover span:before {
+    color: #E12026;
+}
+
+.button span:before {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-feedback:hover, .button-feedback:hover span:before {
+    color: #000;
+}
+
+.button-form {
+    display: flex;
+    width: 290px;
+    height: auto;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-form:hover {
+    background: linear-gradient(180deg, #6F7580 0%, #4D5769 100%);
+    color: #fff;
+}
+
+.button-form span:before {
+    font-size: 22px;
+}
