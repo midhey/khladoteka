@@ -10,10 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
     searchIcon.addEventListener('click', function () {
         menuSearchInput.classList.toggle('active');
 
-        // Добавляем класс для скрытия top-bar-menu при активации поиска
         topBarMenu.classList.toggle('hidden');
 
-        // Добавляем класс для изменения стилей top-menu при активации поиска
         topMenu.classList.toggle('search-active');
 
         if (menuSearchInput.classList.contains('active')) {

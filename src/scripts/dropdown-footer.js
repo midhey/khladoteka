@@ -15,9 +15,7 @@ const addMenuFunctionality = (menuId) => {
         const isMenuListClicked = menuList.contains(event.target);
         const isDropdownIconClicked = dropdownIcon.contains(event.target);
 
-        // Проверяем, был ли клик по заголовку, иконке или списку меню
         if (isMenuTitleClicked && isMenuListClicked && isDropdownIconClicked) {
-            // Проверяем, открыто ли текущее меню, прежде чем его скрыть
             if (window.innerWidth < 700 && menuList.style.display === 'flex') {
                 menuList.style.display = 'none';
                 dropdownIcon.classList.remove('icon-rotate');
