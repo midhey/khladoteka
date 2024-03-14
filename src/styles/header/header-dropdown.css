@@ -16,6 +16,93 @@
     box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.10);
 }
 
+.dropdown-comparison {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFF;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.10);
+    width: 320px;
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.dropdown-comparison div:first-child {
+    color: #202020;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Onest;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+}
+
+.dropdown-comparison-container {
+    display: flex;
+    padding: 20px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.dropdown-comparison-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 20px 2px 0px;
+    border: 1px solid #F0F0F0;
+}
+
+.dropdown-comparison-block-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-comparison-block-main span {
+    color: #202020;
+    font-size: 16px;
+    line-height: 120%; /* 19.2px */
+}
+
+.dropdown-comparison-button-container {
+    display: flex;
+    padding: 10px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-top: 1px solid #F0F0F0;
+}
+
+.dropdown-comparison .dropdown-comparison-button-container .button-comparison {
+    color: white;
+    margin: 0 auto;
+    padding: 15px 40px;
+    width: 100%;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.dropdown-comparison .dropdown-comparison-button-container .button-comparison:hover {
+    border: 2px solid #e12026;
+    color: black;
+}
+
+.dropdown-btn:hover .dropdown-comparison {
+    display: flex;
+}
+
 .dropdown-account {
     width: 270px;
     position: absolute;
@@ -155,6 +242,10 @@
     display: none;
 }
 
+.desktop-trigger {
+    position: relative;
+}
+
 @media screen and (min-width: 991px) {
     .dropdown-btn:hover .dropdown {
         display: flex;
@@ -190,6 +281,23 @@
         right: 0;
     }
 
+    .dropdown-comparison {
+        width: 100vw;
+        bottom: 60px;
+        left: auto;
+        top: auto;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    .menu-icon li .dropdown-comparison .icon {
+        width: auto;
+    }
+
+    .menu-icon li .dropdown-comparison .icon:before {
+        font-size: 15px;
+    }
+
     .dropdown li {
         width: 100%;
     }
@@ -222,8 +330,8 @@
     .desktop-trigger {
         display: flex;
         flex-direction: row!important;
-        align-items: center; /* Выравнивание по вертикали */
-        justify-content: space-between; /* Равномерное распределение по горизонтали */
+        align-items: center;
+        justify-content: space-between;
     }
 
     .desktop-trigger .dropdown-icon {

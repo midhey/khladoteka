@@ -138,4 +138,9 @@
         font-size: 12px;
         line-height: 120%;
     }
+
+    .about-numbers .container {
+        margin-top: 70px;
+        margin-bottom: 120px;
+    }
 }
