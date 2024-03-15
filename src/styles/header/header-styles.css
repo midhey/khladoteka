@@ -42,7 +42,7 @@
     justify-content: center;
 }
 
-.top-menu-ul li a span {
+.top-menu-ul li a span, .search-icon .icon {
     width: 100%;
     margin: auto;
     text-align: center;
@@ -79,7 +79,7 @@
     font-size: 12px;
 }
 
-.menu-icon li:nth-child(2):hover a span:before {
+.search-icon:hover .icon:before {
     color: #E12026;
 }
 
@@ -93,11 +93,12 @@
     color: #C91215;
 }
 
-.menu-icon li a {
+.menu-icon li a, .search-icon {
     width: 64px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .menu-icon li:last-child {
@@ -160,12 +161,22 @@
     height: 2px; /* Высота линии при наведении */
 }
 
-.search-wrap {
-    flex-direction: row!important;
+.menu-icon .search-wrap {
+    flex-direction: row;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
 }
 
 .search-wrap .search-icon {
     cursor: pointer;
+}
+
+.search-icon {
+    height: 100%;
+    background-color: transparent;
 }
 
 .menu-icon-search {
@@ -205,12 +216,12 @@
         gap: 20px;
     }
 
-    .menu-icon li a {
+    .menu-icon li a, .search-icon{
         width: 45px;
     }
 
     .menu-icon-search.active {
-        max-width: 550px;
+        max-width: 500px;
     }
 }
 
@@ -240,7 +251,7 @@
         bottom: auto;
     }
 
-    .menu-icon li a {
+    .menu-icon li a, .search-icon {
         width: 100%;
     }
 
