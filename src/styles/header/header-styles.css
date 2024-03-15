@@ -76,6 +76,7 @@
     gap: 10px;
     flex-shrink: 0;
     background: #E12026;
+    font-size: 12px;
 }
 
 .menu-icon li:nth-child(2):hover a span:before {
@@ -213,14 +214,14 @@
     }
 }
 
-/* Стили для отображения меню-icon внизу на экранах < 768px */
+
 @media screen and (max-width: 990px) {
     .menu-icon {
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #fff; /* Пример фона для видимости на светлом фоне */
+        background-color: #fff;
         display: flex;
         justify-content: space-around;
         box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);

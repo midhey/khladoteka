@@ -1,5 +1,6 @@
 import './to-top-button.js'
 import './dropdown-footer.js'
+import './swiper.js'
 
 document.addEventListener('DOMContentLoaded', function () {
     const searchIcon = document.querySelector('.search-icon');
@@ -21,37 +22,43 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-const dropdownBtn = document.querySelector('.dropdown-btn');
-const dropdown = document.querySelector('.dropdown');
-const desktopTrigger = document.querySelector('.desktop-trigger');
-const dropdownIcon = document.querySelector('.dropdown-icon')
+const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+const dropdowns = document.querySelectorAll('.dropdown');
+const desktopTriggers = document.querySelectorAll('.desktop-trigger');
+const dropdownIcons = document.querySelectorAll('.dropdown-icon')
 
 // Функция для открытия/закрытия списка
-function toggleDropdown() {
-    dropdown.classList.toggle('active');
-    dropdownIcon.classList.toggle('icon-rotate');
+function toggleDropdown(index) {
+    dropdowns[index].classList.toggle('active');
+    dropdownIcons[index].classList.toggle('icon-rotate');
 }
 
-// Обработчик события при наведении на десктопах
-desktopTrigger.addEventListener('mouseenter', () => {
-    if (window.innerWidth >= 990) {
-        toggleDropdown();
-    }
+// Обработчики событий для каждой кнопки
+desktopTriggers.forEach((trigger, index) => {
+    trigger.addEventListener('mouseenter', () => {
+        if (window.innerWidth >= 990) {
+            toggleDropdown(index);
+        }
+    });
 });
 
-// Обработчик события клика на мобильных устройствах
-dropdownBtn.addEventListener('click', (event) => {
-    event.preventDefault(); // Предотвращаем переход по ссылке
-    if (window.innerWidth < 990) {
-        toggleDropdown();
-    }
+dropdownBtns.forEach((btn, index) => {
+    btn.addEventListener('click', (event) => {
+        event.preventDefault(); // Предотвращаем переход по ссылке
+        if (window.innerWidth < 990) {
+            toggleDropdown(index);
+        }
+    });
 });
 
 // Закрытие списка при клике вне его области
 document.addEventListener('click', (event) => {
-    if (!dropdownBtn.contains(event.target) && !dropdown.contains(event.target)) {
-        dropdown.classList.remove('active');
-    }
+    dropdownBtns.forEach((btn, index) => {
+        if (!btn.contains(event.target) && !dropdowns[index].contains(event.target)) {
+            dropdowns[index].classList.remove('active');
+        }
+    });
 });
+
 
 

@@ -87,13 +87,19 @@
         height: max-content;
         flex-direction: column!important;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 0px;
         background-color: #FFF;
         border-bottom: 2px solid #e12026;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .top-menu .top-bar-menu li {
         height: 64px;
+        width: 100%;
+    }
+
+    .top-menu .top-bar-menu li a {
         width: 100%;
     }
 
@@ -102,10 +108,6 @@
         width: 95%;
         margin: 0 auto;
         padding: 0 15px;
-    }
-
-    .top-bar-menu li a {
-        text-align: center;
     }
 
     .top-menu-btn:checked ~ nav {

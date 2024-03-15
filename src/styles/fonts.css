@@ -18,6 +18,18 @@
 }
 
 @font-face {
+    font-family: 'Molot';
+    src: url('../assets/fonts/Molot.eot');
+    src: local('Molot'),
+    url('../assets/fonts/Molot.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Molot.woff2') format('woff2'),
+    url('../assets/fonts/Molot.woff') format('woff'),
+    url('../assets/fonts/Molot.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'hladoteka';
     src:  url('../assets/fonts/icons/hladoteka.eot?avck5b');
     src:  url('../assets/fonts/icons/hladoteka.eot?avck5b#iefix') format('embedded-opentype'),
@@ -44,139 +56,152 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-cancel .path1:before {
+.icon-beer-cooler:before {
     content: "\e900";
+}
+.icon-cancel .path1:before {
+    content: "\e901";
     color: rgb(225, 32, 38);
 }
 .icon-cancel .path2:before {
-    content: "\e901";
-    margin-left: -1em;
-    color: rgb(255, 255, 255);
-}
-.icon-cancel .path3:before {
     content: "\e902";
     margin-left: -1em;
     color: rgb(255, 255, 255);
 }
-.icon-comparison:before {
+.icon-cancel .path3:before {
     content: "\e903";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-cold-boxes:before {
+    content: "\e904";
+}
+.icon-comparison:before {
+    content: "\e905";
     color: #606060;
 }
+.icon-comparison-hover:before {
+    content: "\e906";
+    color: #0084bf;
+}
 .icon-control .path1:before {
-    content: "\e904";
+    content: "\e907";
     color: rgb(255, 255, 255);
 }
 .icon-control .path2:before {
-    content: "\e905";
+    content: "\e908";
     margin-left: -1em;
     color: rgb(225, 32, 38);
 }
 .icon-freezing:before {
-    content: "\e906";
+    content: "\e909";
     color: #0084bf;
 }
 .icon-fridge:before {
-    content: "\e907";
+    content: "\e90a";
     color: #e12026;
 }
 .icon-future-equipment .path1:before {
-    content: "\e908";
+    content: "\e90b";
     color: rgb(225, 32, 38);
 }
 .icon-future-equipment .path2:before {
-    content: "\e909";
+    content: "\e90c";
     margin-left: -1em;
     color: rgb(0, 132, 191);
 }
 .icon-future-equipment .path3:before {
-    content: "\e90a";
+    content: "\e90d";
     margin-left: -1em;
     color: rgb(255, 255, 255);
 }
 .icon-halfarrow:before {
-    content: "\e90b";
+    content: "\e90e";
     color: #808080;
 }
 .icon-heart:before {
-    content: "\e90c";
+    content: "\e90f";
     color: #606060;
 }
 .icon-linkedin:before {
-    content: "\e90d";
+    content: "\e910";
     color: #fff;
 }
 .icon-long-arrow:before {
-    content: "\e90e";
+    content: "\e911";
     color: #fff;
 }
 .icon-mail:before {
-    content: "\e90f";
-    color: #e12026;
-}
-.icon-marker:before {
-    content: "\e910";
-    color: #e12026;
-}
-.icon-person:before {
-    content: "\e911";
-    color: #e12026;
-}
-.icon-phone:before {
     content: "\e912";
     color: #e12026;
 }
-.icon-plus:before {
+.icon-marker:before {
     content: "\e913";
+    color: #e12026;
+}
+.icon-person:before {
+    content: "\e914";
+    color: #e12026;
+}
+.icon-phone:before {
+    content: "\e915";
+    color: #e12026;
+}
+.icon-plus:before {
+    content: "\e916";
 }
 .icon-preservation .path1:before {
-    content: "\e914";
+    content: "\e917";
     color: rgb(225, 32, 38);
 }
 .icon-preservation .path2:before {
-    content: "\e915";
-    margin-left: -1em;
+    content: "\e918";
+    margin-left: -0.8330078125em;
     color: rgb(0, 132, 191);
 }
 .icon-production-box:before {
-    content: "\e916";
-    color: #e12026;
-}
-.icon-search:before {
-    content: "\e917";
-    color: #606060;
-}
-.icon-specialist:before {
-    content: "\e918";
-    color: #e12026;
-}
-.icon-square:before {
     content: "\e919";
     color: #e12026;
 }
-.icon-triangle:before {
+.icon-search:before {
     content: "\e91a";
-    color: #fff;
+    color: #606060;
 }
-.icon-triple-d:before {
+.icon-specialist:before {
     content: "\e91b";
-    color: #fff;
+    color: #e12026;
 }
-.icon-upload:before {
+.icon-square:before {
     content: "\e91c";
     color: #e12026;
 }
-.icon-vk:before {
+.icon-triangle:before {
     content: "\e91d";
     color: #fff;
 }
-.icon-wastebasket:before {
+.icon-triple-d:before {
     content: "\e91e";
+    color: #fff;
+}
+.icon-upload:before {
+    content: "\e91f";
+    color: #e12026;
+}
+.icon-vk:before {
+    content: "\e920";
+    color: #fff;
+}
+.icon-wastebasket:before {
+    content: "\e921";
     color: #c0c0c0;
 }
 .icon-x-close:before {
-    content: "\e91f";
+    content: "\e922";
 }
 .icon-youtube:before {
-    content: "\e920";
+    content: "\e923";
     color: #fff;
+}
+.icon-old-cabinets:before {
+    content: "\e924";
 }

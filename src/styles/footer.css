@@ -51,6 +51,10 @@
     margin: auto;
 }
 
+.footer-contacts-main div a .icon-mail:before {
+    font-size: 13px;
+}
+
 .footer-contacts-main div a .footer-contacts-main-phone {
     display: flex;
     flex-direction: column;

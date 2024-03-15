@@ -63,14 +63,6 @@ button {
     outline: none;
 }
 
-.block-title {
-    font-family: Molot, serif;
-    font-size: 64px;
-    background: linear-gradient(90deg, rgba(111,117,128,1) 0%, rgba(77,87,105,1) 100%);
-    background-clip: text;
-    color: transparent;
-    text-align: center;
-}
 
 input {
     all: unset;
