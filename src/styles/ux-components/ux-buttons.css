@@ -18,8 +18,14 @@
     cursor: pointer;
 }
 
+.button-production span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .button-production span:before {
-    font-size: 18px;
+    font-size: 8px;
 }
 
 .button-production {
@@ -30,6 +36,15 @@
 .button-feedback {
     justify-content: space-between;
     border-bottom: 2px solid #E12026;
+}
+
+.button-feedback .icon {
+    font-size: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .button:hover {
@@ -51,7 +66,6 @@
 }
 
 .button-form {
-    display: flex;
     width: 290px;
     height: auto;
     padding: 18px;
@@ -69,6 +83,12 @@
     color: #fff;
 }
 
+.button-form span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .button-form span:before {
-    font-size: 22px;
+    font-size: 8px;
 }

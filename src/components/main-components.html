@@ -17,6 +17,46 @@
     </div>
     <p class="text-p">
         Наша цель - предоставить высококачественные и надежные решения для хранения и охлаждения продуктов.
-        Наше оборудование имеет современный дизайн и соответствует самым высоким стандартам качества. Мы используем передовые технологии и инновационные материалы для обеспечения эффективного охлаждения и длительного срока службы наших изделий.
+        Наше оборудование имеет современный дизайн и соответствует самым высоким стандартам качества. Мы используем
+        передовые технологии и инновационные материалы для обеспечения эффективного охлаждения и длительного срока
+        службы наших изделий.
     </p>
+
+    <form method="get" action="" id="feedback-form" class="feedback-form">
+        <div class="row">
+            <label>
+                <span class="icon icon-person"></span>
+                <input type="text" placeholder="ФИО" name="fullname" required>
+            </label>
+            <label>
+                <span class="icon icon-mail"></span>
+                <input type="text" placeholder="Телефон или E-mail" name="contact" required>
+            </label>
+        </div>
+        <textarea name="comment" placeholder="Волна слов! Форма отклика! Открой глотку голосом и назови свою правду! Ссылка"></textarea>
+        <div class="file-upload">
+            <label for="fileInput" class="file-label">
+                <span class="icon icon-upload"></span>
+                Добавить файл
+            </label>
+            <input type="file" id="fileInput" name="file" multiple>
+            <div class="file-names-container"></div>
+        </div>
+        <div class="feedback-checkboxes">
+            <label class="cr-wrapper">
+                <input type="checkbox" checked="checked"/>
+                <div class="cr-input"></div>
+                <span>Вы хотите быть в курсе последних событий? Подпишитесь на нашу новостную рассылку.</span>
+            </label>
+            <label class="cr-wrapper">
+                <input type="checkbox" checked="checked"/>
+                <div class="cr-input"></div>
+                <span>Я прочитал и принимаю <a>Общие условия использования и Политику конфиденциальности</a></span>
+            </label>
+        </div>
+
+
+
+
+    </form>
 </div>

@@ -1,5 +1,6 @@
 .main-news {
-    margin: 120px auto 181px ;
+    padding-top: 120px;
+    padding-bottom: 180px;
 }
 
 .main-news .block-title {
@@ -186,6 +187,11 @@
 }
 
 @media screen and (max-width: 800px) {
+    .main-news {
+        padding-top: 70px;
+        padding-bottom: 45px;
+        background: #F0F0F0;
+    }
 
     .main-news-card .main-news-card-text {
         font-style: normal;

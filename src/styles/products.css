@@ -1,10 +1,10 @@
-.products h1 {
+.products .block-title {
     line-height: 89.6px;
     margin-top: 153px;
     margin-bottom: 60px;
 }
 
-.products section {
+.products .product-container {
     display: flex;
     flex-direction: row;
 }
@@ -22,7 +22,7 @@
     background-color: #F4F4F4;
 }
 
-.product-card h3 {
+.product-card div {
     font-family: "Onest", sans-serif;
     font-weight: 700;
     line-height: 28px;
@@ -38,12 +38,63 @@
     margin: 0 auto;
 }
 
-@media (max-width: 1280px) {
+.products-buttons {
+    display: none;
+}
+
+@media (max-width: 990px) {
+    .product-card {
+        width: 45%;
+    }
+
+    .products .product-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .products .block-title {
+        padding: 0 15px;
+        text-align: start;
+        line-height: normal;
+    }
+
     .product-card {
         width: 100%;
     }
 
-    .products section {
+    .products .product-container {
         flex-direction: column;
+    }
+
+    .products-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: #151515;
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    .products-buttons a {
+        color: #FFF;
+        text-align: center;
+        font-family: Onest;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 22.4px */
+        display: flex;
+        min-height: 60px;
+        padding: 15px 25px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+    }
+
+    .products-buttons .products-buttons-service {
+        background: #E12026;
     }
 }

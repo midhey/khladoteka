@@ -1,35 +1,50 @@
-<!--<div class="main-feedback">-->
-<!--    <div class="feedback-form-title">-->
-<!--        <div >-->
-<!--            перейдём к действиям-->
-<!--        </div>-->
-<!--        <p>-->
-<!--            Мы с удовольствием ответим на все ваши вопросы и предоставим дополнительную информацию о нашем оборудовании-->
-<!--        </p>-->
-<!--    </div>-->
-<!--    <div class="feedback-form">-->
-<!--        <form method="get" action="" class="container-form">-->
-<!--            <div class="row">-->
-<!--                <label>-->
-<!--                    <input type="text" placeholder="" name="fullname">-->
-<!--                </label>-->
-<!--                <label>-->
-<!--                    <input type="text" placeholder="" name="contact">-->
-<!--                </label>-->
-<!--            </div>-->
-<!--            <textarea name="comment">-->
+<div class="main-feedback">
+    <div class="feedback-form-title">
+        <div class="block-title">
+            перейдём к действиям
+        </div>
+        <div>
+            Мы с удовольствием ответим на все ваши вопросы и предоставим дополнительную информацию о нашем оборудовании
+        </div>
+    </div>
+    <form method="get" action="" id="feedback-form" class="feedback-form">
+        <div class="row">
+            <label>
+                <span class="icon icon-person"></span>
+                <input type="text" placeholder="ФИО" name="fullname" required>
+            </label>
+            <label>
+                <span class="icon icon-mail"></span>
+                <input type="text" placeholder="Телефон или E-mail" name="contact" required>
+            </label>
+        </div>
+        <textarea name="comment" placeholder="Волна слов! Форма отклика! Открой глотку голосом и назови свою правду! Ссылка"></textarea>
+        <div class="file-upload">
+            <label for="fileInput" class="file-label">
+                <span class="icon icon-upload"></span>
+                Добавить файл
+            </label>
+            <input type="file" id="fileInput" name="file" multiple>
+            <div class="file-names-container"></div>
+        </div>
+        <div class="feedback-checkboxes">
+            <label class="cr-wrapper">
+                <input type="checkbox" checked="checked"/>
+                <div class="cr-input"></div>
+                <span>Вы хотите быть в курсе последних событий? Подпишитесь на нашу новостную рассылку.</span>
+            </label>
+            <label class="cr-wrapper">
+                <input type="checkbox" checked="checked"/>
+                <div class="cr-input"></div>
+                <span>Я прочитал и принимаю <a>Общие условия использования и Политику конфиденциальности</a></span>
+            </label>
+        </div>
+        <button type="submit" class="button button-form">
+            Оставить заявку
+            <span class="icon icon-long-arrow"></span>
+        </button>
 
-<!--            </textarea>-->
-<!--            <label for="fileInput">Добавить файл</label>-->
-<!--            <input type="file" id="fileInput" name="file" multiple>-->
-<!--            <label>-->
-<!--                <input type="checkbox" name="news-subscription-flag">-->
-<!--                Вы хотите быть в курсе последних событий? Подпишитесь на нашу новостную рассылку.-->
-<!--            </label>-->
-<!--            <label>-->
-<!--                <input type="checkbox" name="news-subscription-flag">-->
-<!--                Я прочитал и принимаю <a style="color: #E12026">Общие условия использования и Политику конфиденциальности</a>-->
-<!--            </label>-->
-<!--        </form>-->
-<!--    </div>-->
-<!--</div>-->
+
+
+    </form>
+</div>

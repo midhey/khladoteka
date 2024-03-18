@@ -1,6 +1,7 @@
 @import "fonts.css";
 @import "ux-styles.css";
 @import "./header/header.css";
+@import "banner.css";
 @import "about-goal.css";
 @import "about-numbers.css";
 @import "articles.css";
@@ -51,11 +52,6 @@ li {
 
 .align-center {
     align-items: center;
-}
-
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
 }
 
 button {

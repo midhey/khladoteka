@@ -19,3 +19,27 @@ var newsSwiper = new Swiper(".newsSwiper", {
         }
     }
 });
+
+var gallerySwiper = new Swiper(".gallerySwiper", {
+    modules: [Navigation, Pagination],
+    slidesPerView: 1.1,
+    spaceBetween: 6,
+    loop: true,
+    navigation: {
+        nextEl: ".gallery-button-next",
+        prevEl: ".gallery-button-prev",
+    },
+    pagination: {
+        el: ".gallery-counter",
+        type: "fraction"
+    },
+    breakpoints: {
+        800: {
+            slidesPerView: 'auto',
+            spaceBetween: 6
+        }
+    }
+});
+
+
+

@@ -1,34 +1,78 @@
-<section class="gallery">
-    <h1 class="block-title">
+<div class="gallery">
+    <div class="block-title">
         Галерея
-    </h1>
-    <div class="row justify-between">
-        <div class="gallery-photo main-photo">
-            <img src="src/assets/gallery/gallery-example.png" alt="">
+    </div>
+    <div class="swiper gallerySwiper">
+        <div class="swiper-wrapper">
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example1.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example1.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example1.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example1.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example1.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example1.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example1.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example1.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example1.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example1.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example1.png" alt="">
+            </div>
+            <div class="gallery-photo swiper-slide">
+                <img src="src/assets/gallery/gallery-example.png" alt="">
+            </div>
         </div>
-        <div class="gallery-photo">
-            <img src="src/assets/gallery/gallery-example1.png" alt="">
-        </div>
-        <div class="gallery-photo">
-            <img src="src/assets/gallery/gallery-example.png" alt="">
-        </div>
-        <div class="gallery-photo">
-            <img src="src/assets/gallery/gallery-example.png" alt="">
+        <div class=""></div>
+        <div class="row gallery-panel">
+            <a href="">
+                <span class="icon icon-plus"></span>
+                все фото
+            </a>
+            <button class="gallery-button-prev">
+                <span class="icon icon-triangle"></span>
+            </button>
+            <button class="gallery-button-next">
+                <span class="icon icon-triangle"></span>
+            </button>
+            <div class="gallery-counter">
+            </div>
         </div>
     </div>
-    <div class="row gallery-panel">
-        <a href="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.18182 0.5V7.31818H15V8.68182H8.18182V15.5H6.81818V8.68182H0V7.31818H6.81818V0.5H8.18182Z" fill="white"/>
-            </svg>
-            все фото
-        </a>
-        <button id="gallery-button-prev">
-        </button>
-        <button id="gallery-button-next">
-        </button>
-        <div class="gallery-counter">
-            <p><span>1</span>/<span>80</span></p>
-        </div>
-    </div>
-</section>
+
+</div>
+
+<div id="gallery-modal" class="gallery-modal">
+    <span class="close">&times;</span>
+    <img class="gallery-modal-img" src="" alt="">
+</div>
