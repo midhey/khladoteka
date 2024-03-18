@@ -37,25 +37,40 @@
     font-style: normal;
     font-weight: 500;
     line-height: 120%; /* 21.6px */
+    transition: color 0.3s ease-in-out;
 }
 
-.footer-contacts-main div a .icon {
+.footer-contacts-main div:hover a {
+    color: #E12026
+}
+
+.footer-contacts-main div a .icon, .footer-contacts-main div .icon {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: min-content;
 }
 
-.footer-contacts-main div a .icon:before {
+.footer-contacts-main div a .icon:before, .footer-contacts-main div .icon  {
     font-size: 18px;
     color: #E12026;
-    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contacts-main .row:nth-child(2) {
+    align-items: center;
+    gap: 10px;
 }
 
 .footer-contacts-main div a .icon-mail:before {
     font-size: 13px;
 }
 
-.footer-contacts-main div a .footer-contacts-main-phone {
+.footer-contacts-main div .footer-contacts-main-phone {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -66,7 +81,12 @@
 }
 
 .footer-contacts-main-phone span {
+    color: #404040;
+    font-family: Onest;
     font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 14.4px */
 }
 
 .footer-contacts-main-address {
@@ -103,9 +123,12 @@
     line-height: 120%; /* 19.2px */
     font-weight: 400;
     font-family: Onest, serif;
+    transition: color 0.3s ease-in-out;
 }
 
-
+.footer-menu ul li a:hover {
+    color: #E12026;
+}
 
 .footer-copyright {
     height: 77px;
@@ -129,19 +152,27 @@
     gap: 30px;
 }
 
-.footer-copyright div p, .footer-copyright div p a {
+.footer-copyright div a, .footer-copyright div {
     font-family: Onest, serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 16.8px;
+    color: #FFF;
+    transition: color 0.3s ease-in-out;
 }
 
-.footer-copyright div p a {
-    color: white;
-}
-
-.footer-copyright div p a span {
+.footer-copyright-info a span {
     text-decoration: underline;
+}
+
+.footer-copyright a span:before {
+    font-size: 18px;
+    fill: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-copyright .social-links a:hover span:before {
+    color: #404040;
 }
 
 .social-links {
@@ -149,6 +180,10 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
+}
+
+.footer-copyright div a:hover {
+    color: #000000;
 }
 
 
