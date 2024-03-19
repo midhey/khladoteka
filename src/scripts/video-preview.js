@@ -1,3 +1,6 @@
+// main.js
+let player;
+
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
         height: '100%',
@@ -28,3 +31,8 @@ function onPlayerReady(event) {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Инициализируем YouTube IFrame API при загрузке DOM
+    onYouTubeIframeAPIReady();
+});
