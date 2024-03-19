@@ -35,21 +35,21 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20" # Укажите необходимую версию Node.js
+          node-version: "20"
       - name: Install dependencies
-        run: npm install # Используйте yarn install, если предпочитаете Yarn
+        run: npm install
       - name: Build project
-        run: npm run build # Измените команду, если у вас другая команда для сборки проекта Vite
+        run: npm run build 
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3.0.1
         with:
-          # Upload entire repository
-          path: '.'
+          name: vite-site
+          path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
           token: ${{ secrets.TOKEN }}
-          artifact_name: ./dist # Укажите путь к каталогу с собранными файлами проекта Vite
+          artifact_name: vite-site
