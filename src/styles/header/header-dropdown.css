@@ -519,3 +519,10 @@
         border-bottom: none;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .dropdown-account {
+        right: auto;
+        left: 0;
+    }
+}
