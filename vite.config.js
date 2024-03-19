@@ -17,9 +17,9 @@ export default {
         mkcert(),
         imagemin({
             gifsicle: {
-                optimizationLevel: 1,
+                optimizationLevel: 3,
                 interlaced: true,
-                colors: 'auto'
+                colors: 124
             }
         })
     ],
