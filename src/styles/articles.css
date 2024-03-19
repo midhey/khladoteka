@@ -70,9 +70,17 @@
     background-position-y: bottom;
 }
 
+.articles-block .articles-glass-background:hover {
+    background-image: url("/src/assets/articles/glass-hover.gif");
+}
+
 .articles-light-background {
     background-image: url("/src/assets/articles/lights.png");
     background-position-y: center;
+}
+
+.articles-light-background:hover {
+    background-image: url("/src/assets/articles/lights-hover.gif");
 }
 
 .articles-preservation-background {
@@ -81,9 +89,17 @@
     background-size: contain;
 }
 
+.articles-preservation-background:hover {
+    background-image: url("/src/assets/articles/preservation-hover.gif");
+}
+
 .articles-cooling-background {
     background-image: url("/src/assets/articles/cooling.png");
     background-position-y: center;
+}
+
+.articles-cooling-background:hover {
+    background-image: url("/src/assets/articles/cooling-hover.gif");
 }
 
 .articles-read-button {

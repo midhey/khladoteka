@@ -2,7 +2,6 @@ import './to-top-button.js'
 import './dropdown-footer.js'
 import './swiper.js'
 import './feedback-form.js'
-import './articles-hover-effect.js'
 
 document.addEventListener('DOMContentLoaded', function () {
     const searchIcon = document.querySelector('.search-icon');

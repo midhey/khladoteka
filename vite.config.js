@@ -1,8 +1,8 @@
 import vituum from 'vituum';
 import posthtml from '@vituum/vite-plugin-posthtml';
 import mkcert from 'vite-plugin-mkcert';
+import imagemin from 'vite-plugin-imagemin';
 
-// Определение базового пути в зависимости от окружения
 const base = process.env.NODE_ENV === 'production' ? '/khladoteka/' : '/';
 
 export default {
@@ -14,6 +14,14 @@ export default {
             root: './src',
             plugins: [],
         }),
-        mkcert()
+        mkcert(),
+        imagemin({
+            gifsicle: {
+                optimizationLevel: 1,
+                interlaced: true,
+                colors: 'auto'
+            }
+        })
     ],
+
 };
