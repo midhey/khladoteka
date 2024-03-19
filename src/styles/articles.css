@@ -6,6 +6,7 @@
 }
 
 .articles-block {
+    position: relative;
     width: 25%;
     height: 780px;
     background-color: #000000;
@@ -28,11 +29,12 @@
     flex-direction: row;
     align-items: center;
     gap: 15px;
+    z-index: 3;
 }
 
 .articles-title-text {
     color: #FFF;
-    font-family: Molot;
+    font-family: Molot, serif;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 21.6px */
@@ -44,15 +46,56 @@
     font-size: 30px;
 }
 
+.articles-block-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%; /* Максимальная ширина будет равна ширине родительского элемента */
+    max-height: 100%; /* Максимальная высота будет равна высоте родительского элемента */
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    mix-blend-mode: luminosity;
+    transition: all 0.5s ease-in-out;
+}
+
+.articles-block-background:hover {
+    mix-blend-mode: initial;
+}
+
+.articles-glass-background {
+    background-image: url("/src/assets/articles/glass.png");
+    background-position-y: bottom;
+}
+
+.articles-light-background {
+    background-image: url("/src/assets/articles/lights.png");
+    background-position-y: center;
+}
+
+.articles-preservation-background {
+    background-image: url("/src/assets/articles/preservation.png");
+    background-position-y: top;
+    background-size: contain;
+}
+
+.articles-cooling-background {
+    background-image: url("/src/assets/articles/cooling.png");
+    background-position-y: center;
+}
+
 .articles-read-button {
     height: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
     margin: 20px 30px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .articles-read-button:before {
@@ -78,6 +121,17 @@
     width: 100%;
 }
 
+@media screen and (max-width: 1440px) {
+    .articles-block {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .articles-block {
+        width: 100%;
+    }
+}
 
 /* Настройка шрифтов на странице */
 @media (max-width: 320px) {
@@ -88,11 +142,11 @@
 
 @media (min-width: 321px) and (max-width: 1439px) {
     .articles-title .articles-title-text {
-        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1440 - 320)));
+        font-size: calc(20px + (20 - 16) * ((100vw - 320px) / (1440 - 320)));
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
     .articles-title .articles-title-text {
         font-size: 20px;
         max-width: 75%;
