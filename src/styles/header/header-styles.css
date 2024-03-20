@@ -77,6 +77,12 @@
     flex-shrink: 0;
     background: #E12026;
     font-size: 12px;
+    transition: background-color 0.3s  ease-in-out;
+    cursor: pointer;
+}
+
+.scroll-to-top-btn:hover span:before {
+    background-color: #151515;
 }
 
 .search-icon:hover .icon:before {
