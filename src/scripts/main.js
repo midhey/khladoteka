@@ -3,6 +3,7 @@ import './dropdown-footer.js'
 import './swiper.js'
 import './feedback-form.js'
 import './video-preview.js'
+import './articles.js'
 
 document.addEventListener('DOMContentLoaded', function () {
     const searchIcon = document.querySelector('.search-icon');

@@ -2,18 +2,25 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
 .articles-block {
     position: relative;
     width: 25%;
     height: 780px;
+    min-width: 25%;
     background-color: #000000;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+}
+
+.articles-block-expanded {
+    min-width: 600px;
 }
 
 .articles-title {
@@ -42,7 +49,7 @@
     font-size: 30px;
 }
 
-.articles-block-background {
+.articles-block .articles-block-background {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -57,7 +64,7 @@
     transition: all 0.5s ease-in-out;
 }
 
-.articles-block-background:hover {
+.articles-block:hover .articles-block-background, .articles-block-expanded .articles-block-background  {
     mix-blend-mode: initial;
 }
 
@@ -66,26 +73,26 @@
     background-position-y: bottom;
 }
 
-.articles-block .articles-glass-background:hover {
+.articles-block:hover .articles-glass-background, .articles-block-expanded .articles-glass-background{
     background-image: url("/src/assets/articles/glass-hover.gif");
 }
 
-.articles-light-background {
+.articles-block .articles-light-background {
     background-image: url("/src/assets/articles/lights.png");
     background-position-y: center;
 }
 
-.articles-light-background:hover {
+.articles-block:hover .articles-light-background, .articles-block-expanded .articles-light-background {
     background-image: url("/src/assets/articles/lights-hover.gif");
 }
 
-.articles-preservation-background {
+.articles-block .articles-preservation-background {
     background-image: url("/src/assets/articles/preservation.png");
     background-position-y: top;
     background-size: cover;
 }
 
-.articles-preservation-background:hover {
+.articles-block:hover .articles-preservation-background, .articles-block-expanded .articles-preservation-background {
     background-image: url("/src/assets/articles/preservation-hover.gif");
 }
 
@@ -94,9 +101,48 @@
     background-position-y: center;
 }
 
-.articles-cooling-background:hover {
+.articles-block:hover .articles-cooling-background, .articles-block-expanded .articles-cooling-background {
     background-image: url("/src/assets/articles/cooling-hover.gif");
 }
+
+.articles-block-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 70px 30px;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-family: Onest, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+    letter-spacing: 0.2px;
+    z-index: 1;
+    opacity: 0; /* Начальное значение непрозрачности */
+    transition: all 0.3s ease-in-out;
+}
+
+.articles-block-expanded .articles-block-text {
+    opacity: 1; /* Устанавливаем полную непрозрачность при раскрытии блока */
+}
+
+.articles-block-text span {
+    opacity: 0;
+    transition-duration: .3s;
+    transition-delay: 0.3s;
+}
+
+.articles-block-expanded .articles-block-text span {
+    opacity: 1;
+    transition-duration: 0s;
+}
+
+
+
 
 .articles-read-button {
     height: 20px;
@@ -108,6 +154,7 @@
     margin: 20px 30px;
     box-sizing: border-box;
     position: relative;
+    z-index: 2;
 }
 
 .articles-read-button:before {
@@ -129,13 +176,26 @@
     text-transform: uppercase;
 }
 
+.articles-block-expanded .articles-read-button:after {
+    content: "Закрыть";
+}
+
+.articles-read-expanded .articles-read-button:before {
+    width: 100%;
+}
+
 .articles-block:hover .articles-read-button:before {
     width: 100%;
 }
 
 @media screen and (max-width: 1390px) {
+    .articles {
+        flex-wrap: wrap;
+    }
+
     .articles-block {
         width: 50%;
+        min-width: auto;
     }
 }
 
