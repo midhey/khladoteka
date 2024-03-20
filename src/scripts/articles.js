@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         articlesBlock.addEventListener('click', function(event) {
             // Переключаем класс для раскрытия или скрытия блока текста
+            articlesBlocks.forEach(function(block) {
+                if (block !== articlesBlock) {
+                    block.classList.remove('articles-block-expanded');
+                    block.classList.remove('articles-block-left');
+                }
+            });
             articlesBlock.classList.toggle('articles-block-expanded');
             // Если это последний элемент, добавляем класс для открытия влево
             if (index === articlesBlocks.length - 1) {
