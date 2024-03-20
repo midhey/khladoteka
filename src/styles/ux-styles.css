@@ -25,6 +25,11 @@
     margin: 0 auto;
 }
 
+.container-large {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 textarea {
     resize: none;
 }
