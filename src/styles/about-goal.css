@@ -1,6 +1,5 @@
-
-.about-goal::before,
-.about-goal::after {
+.about-goal:before,
+.about-goal:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -9,13 +8,59 @@
     background-color: #151515;
 }
 
-.about-goal::before {
+.about-goal:before {
     top: 0;
     left: 0;
     transform: skewY(5.85deg);
 }
 
-.about-goal::after {
+.about-goal-animation {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    z-index: -1;
+    top: -25px;
+    left: 0;
+    transform: skewY(5.85deg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    transition: all 2s ease-in-out;
+}
+
+.about-goal-animation:hover {
+    padding: 0 46%;
+}
+
+
+.about-goal-animation-circle-1 {
+    width: 30px;
+    height: 30px;
+    background-color: #D0D5DD;
+    border-radius: 50%;
+    transform: skewY(-5.85deg);
+}
+
+.about-goal-right-animation {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-goal-animation-circle-2 {
+    width: 43px;
+    height: 43px;
+    background-color: #E12026;
+    border-radius: 50%;
+    transform: skewY(-5.85deg);
+}
+
+.about-goal-right-animation svg {
+    transform: skewY(-5.85deg);
+}
+
+.about-goal:after {
     bottom: 0;
     right: 0;
     transform: skewY(4.13deg);
@@ -30,33 +75,41 @@
     margin-top: 202px;
 }
 
+.about-figure {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.about-figure .about-figure-ex-mark {
+    position: absolute;
+    left: 240px;
+}
+
+.about-goal .container-large {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    margin: 200px auto;
+}
+
 .about {
     color: white;
     max-width: 640px;
+    gap: 40px;
 }
 
-.about p {
-    font-family: Onest, serif;
-    font-weight: 400;
+.about .about-text {
+    color: #FFF;
+    font-family: Onest;
     font-size: 22px;
-    line-height: 33px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+    letter-spacing: 0.22px;
 }
 
-.about button {
-    font-family: Onest, serif;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 21px;
-    width: 200px;
-    height: 50px;
-    background-color: #E12026;
-    color: white;
-    cursor: pointer;
-    margin-top: 40px;
-}
-
-.about button::after {
-    content: url("../assets/other/arrow-right.svg");
-    width: 18px;
-    margin-left: 12px;
+.about .about-text div {
+    height: 15px;
 }

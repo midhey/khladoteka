@@ -42,3 +42,31 @@
     display: none!important;
 }
 
+.video-preview {
+    display: flex;
+    width: 100%;
+    background-color: #151515;
+}
+
+.video-preview .container-large {
+    width: 100%;
+}
+
+@media (max-width: 320px) {
+    .video-preview {
+        height: 320px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 1439px) {
+    .video-preview {
+        height: calc(50vw + 130px);
+    }
+}
+
+@media (min-width: 1440px) {
+    .video-preview {
+        height: 780px;
+    }
+}
+
