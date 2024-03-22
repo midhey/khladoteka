@@ -148,6 +148,7 @@
 
 .banner-advantages-element .banner-advantages-element-image img {
     transition: all 0.2s ease-in-out;
+    height: 100%;
 }
 
 .banner-advantages-element:hover .banner-advantages-element-image {
@@ -381,6 +382,7 @@
         flex-direction: column;
         gap: 30px;
     }
+
 
     .banner-advantages-element .banner-advantages-element-text {
         text-align: center;

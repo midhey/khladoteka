@@ -20,7 +20,11 @@ export default {
                 optimizationLevel: 3,
                 interlaced: true,
                 colors: 124
-            }
+            },
+            pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4
+            },
         })
     ],
 
