@@ -60,10 +60,10 @@
 }
 
 .scroll-to-top-btn {
-    border: none;
+    border: 1px ridge rgb(187, 18, 24);
     position: fixed;
     bottom: 5%;
-    right: 0;
+    right: 10px;
     height: auto;
 }
 

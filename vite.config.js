@@ -2,6 +2,8 @@ import vituum from 'vituum';
 import posthtml from '@vituum/vite-plugin-posthtml';
 import mkcert from 'vite-plugin-mkcert';
 import imagemin from 'vite-plugin-imagemin';
+import imageminWebp from 'imagemin-webp';
+
 
 const base = process.env.NODE_ENV === 'production' ? '/khladoteka/' : '/';
 
@@ -27,5 +29,4 @@ export default {
             },
         })
     ],
-
 };

@@ -16,6 +16,7 @@
     justify-content: center;
     transition: all 10ms;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .product-card:hover {

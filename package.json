@@ -24,6 +24,8 @@
   "devDependencies": {
     "@vituum/vite-plugin-posthtml": "^1.1.0",
     "autoprefixer": "^10.4.18",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0",
     "vite": "^5.1.4",
     "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-mkcert": "^1.17.4",
@@ -32,6 +34,7 @@
   "author": "midhey",
   "license": "ISC",
   "dependencies": {
+    "gsap": "^3.12.5",
     "swiper": "^11.0.7"
   }
 }

@@ -220,35 +220,29 @@
 /* Настройка шрифтов на странице */
 @media (max-width: 320px) {
     .articles-title .articles-title-text {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .articles .articles-block .articles-block-text {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .articles-block {
-        height: 320px;
-    }
-}
-
-@media screen and (min-width: 321px) and (max-width: 550px) {
-    .articles .articles-block .articles-block-text {
-        font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (550 - 320)));
+        height: calc(430px + (700 - 430) * ((100vw - 320px) / (1440 - 320)));
     }
 }
 
 @media (min-width: 321px) and (max-width: 1439px) {
     .articles-title .articles-title-text {
-        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1440 - 320)));
+        font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1440 - 320)));
     }
 
     .articles-block .articles-block-text {
-        font-size: calc(16px + (16 - 10) * ((100vw - 320px) / (1440 - 320)));
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1440 - 320)));
     }
 
     .articles-block {
-        height: calc(50vw + 130px);
+        height: calc(430px + (550 - 430) * ((100vw - 320px) / (1440 - 320)));
     }
 }
 

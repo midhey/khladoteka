@@ -1,6 +1,7 @@
 import './to-top-button.js'
 import './search.js'
 import './dropdown-footer.js'
+import './scrollMagic.js'
 import './swiper.js'
 import './feedback-form.js'
 import './video-preview.js'

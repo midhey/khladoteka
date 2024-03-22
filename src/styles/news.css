@@ -246,29 +246,29 @@
 
 @media (max-width: 320px) {
     .main-news-card-title {
-        font-size: 10px;
+        font-size: 18px;
     }
 
     .main-news-card-text {
-        font-size: 7px;
+        font-size: 14px;
     }
 
     .main-news-read-button {
-        font-size: 6px;
+        font-size: 12px;
     }
 }
 
 @media (min-width: 321px) and (max-width: 1440px) {
     .main-news-card-title {
-        font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+        font-size: 18px;
     }
 
     .main-news-card-text {
-        font-size: calc(7px + (14 - 7) * ((100vw - 320px) / (1440 - 320)));
+        font-size: 14px;
     }
 
     .main-news-read-button {
-        font-size: calc(6px + (12 - 6) * ((100vw - 320px) / (1440 - 320)));
+        font-size: 12px;
     }
 }
 

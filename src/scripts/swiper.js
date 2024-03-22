@@ -6,7 +6,7 @@ import 'swiper/css';
 // init Swiper:
 var newsSwiper = new Swiper(".newsSwiper", {
     modules: [Navigation],
-    slidesPerView: 1.5,
+    slidesPerView: 1.1,
     spaceBetween: 20,
     navigation: {
         nextEl: ".main-news-button-next",

@@ -30,10 +30,6 @@
     transition: all 2s ease-in-out;
 }
 
-.about-goal-animation:hover {
-    padding: 0 46%;
-}
-
 .about-goal-animation-circle-1 {
     width: 30px;
     height: 30px;
@@ -228,7 +224,7 @@
 
 @media (max-width: 320px) {
     .about .about-text {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .about-figure-right-rectangle {
@@ -268,7 +264,7 @@
 
 @media (min-width: 320px) and (max-width: 1439px) {
     .about .about-text {
-        font-size: calc(15px + (22 - 15) * ((100vw - 320px) / (1440 - 320)));
+        font-size: calc(14px + (22 - 14) * ((100vw - 320px) / (1440 - 320)));
     }
 
     .about-figure-right-rectangle {
