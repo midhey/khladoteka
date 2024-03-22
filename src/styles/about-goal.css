@@ -34,7 +34,6 @@
     padding: 0 46%;
 }
 
-
 .about-goal-animation-circle-1 {
     width: 30px;
     height: 30px;
@@ -81,17 +80,68 @@
     top: 0;
 }
 
+.about-figure-big-rectangle {
+    position: absolute;
+    width: 350px;
+    height: 325px;
+    background-color: #E12026;
+    clip-path: polygon(0 0, 10% 0, 100% 100%, 0% 100%);
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.about-figure-right-rectangle {
+    width: 120px;
+    height: 200px;
+    background: #E12026;
+    position: absolute;
+    top: 324px;
+    left: 229px;
+}
+
+.about-figure-left-rectangle {
+    width: 70px;
+    height: 354px;
+    background-color: #E12026;
+    position: absolute;
+    top: 324px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98.5%);
+}
+
+.about-figure-left-parallelogram {
+    width: 255px;
+    height: 112px;
+    background-color: #FFF;
+    position: absolute;
+    top: 291px;
+    left: 349px;
+    transform: skewY(-14.6deg);
+}
+
 .about-figure .about-figure-ex-mark {
     position: absolute;
     left: 240px;
+    top: -240px;
+}
+
+.about-figure-little-rectangle {
+    height: 22px;
+    width: 50px;
+    transform: skewY(14.55deg);
+    background-color: #E12026;
+    position: absolute;
+    left: 670px;
+    top: -40px;
 }
 
 .about-goal .container-large {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: wrap;
     position: relative;
-    margin: 200px auto;
+    margin: 200px auto 155px;
 }
 
 .about {
@@ -112,4 +162,152 @@
 
 .about .about-text div {
     height: 15px;
+}
+
+.about-goal-title {
+    color: #FFF;
+    display: none;
+    text-align: center;
+    font-family: Molot;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 44.8px */
+    text-transform: uppercase;
+    transform: rotate(6.085deg);
+}
+
+@media screen and (max-width: 1439px) {
+    .about-goal .container-large {
+        margin: -30px 0;
+    }
+
+    .about-goal-title {
+        display: block;
+
+    }
+
+    .about-figure {
+        width: 100%;
+        position: initial;
+        overflow: hidden;
+    }
+
+    .about-goal .container-large {
+        justify-content: center;
+    }
+
+    .about-figure-little-rectangle {
+        top: auto;
+        left: 15px;
+    }
+
+    .about-figure-ex-mark {
+        display: none;
+    }
+
+    .about-figure-big-rectangle {
+        clip-path: none;
+    }
+
+    .about-figure-big-rectangle:before {
+        content: '';
+        position: absolute;
+        left: 25%;
+        top: -75%;
+        width: 150%;
+        height: 150%;
+        border-radius: 50%;
+        background-color: #151515;
+    }
+
+    .about {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about .about-text {
+        font-size: 15px;
+    }
+
+    .about-figure-right-rectangle {
+        width: 64px;
+        height: 100px;
+        top: 165px;
+        left: 114px;
+    }
+
+    .about-figure-left-rectangle {
+        width: 35px;
+        height: 153px;
+        top: 165px;
+        clip-path: none;
+    }
+
+    .about-figure-big-rectangle {
+        width: 179px;
+        height: 166px;
+    }
+
+    .about-figure-left-parallelogram {
+        width: 90px;
+        height: 45px;
+        top: 155px;
+        left: 179px;
+    }
+
+    .about-figure {
+        height: 450px;
+    }
+
+    .about-figure-little-rectangle {
+        top: 400px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1439px) {
+    .about .about-text {
+        font-size: calc(15px + (22 - 15) * ((100vw - 320px) / (1440 - 320)));
+    }
+
+    .about-figure-right-rectangle {
+        width: calc(64px + (120 - 64) * ((100vw - 320px) / (1440 - 320)));
+        height: calc(100px + (200 - 100) * ((100vw - 320px) / (1440 - 320)));
+        top: calc(165px + (324 - 165) * ((100vw - 320px) / (1440 - 320)));
+        left: calc(114.5px + (229 - 114.5) * ((100vw - 320px) / (1440 - 320)));
+    }
+
+    .about-figure-left-rectangle {
+        width: calc(35px + (70 - 35) * ((100vw - 320px) / (1440 - 320)));
+        height: calc(153px + (354 - 153) * ((100vw - 320px) / (1440 - 320)));
+        top: calc(165px + (324 - 165) * ((100vw - 320px) / (1440 - 320)));
+        clip-path: none;
+    }
+
+    .about-figure-big-rectangle {
+        width: calc(179px + (350 - 179) * ((100vw - 320px) / (1440 - 320)));
+        height: calc(166px + (325 - 166) * ((100vw - 320px) / (1440 - 320)));
+    }
+
+    .about-figure-left-parallelogram {
+        width: calc(90px + (225 - 90) * ((100vw - 320px) / (1440 - 320)));
+        height: calc(45px + (112 - 45) * ((100vw - 320px) / (1440 - 320)));
+        top: calc(155px + (291 - 155) * ((100vw - 320px) / (1440 - 320)));
+        left: calc(179px + (349 - 179) * ((100vw - 320px) / (1440 - 320)));
+    }
+
+    .about-figure {
+        height: calc(450px + (800 - 450) * ((100vw - 320px) / (1440 - 320)));
+    }
+
+    .about-figure-little-rectangle {
+        top: calc(400px + (750 - 400) * ((100vw - 320px) / (1440 - 320)))
+    }
+}
+
+@media (min-width: 1441px) {
+    .about .about-text {
+        font-size: 22px;
+    }
 }
