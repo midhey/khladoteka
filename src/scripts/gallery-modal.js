@@ -33,4 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
             closeLightbox();
         }
     });
+
+    // Закрытие модального окна при нажатии на клавишу Esc
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeLightbox();
+        }
+    });
 });

@@ -52,7 +52,7 @@
 .top-menu-ul li a span:before {
     width: 100%;
     margin: 0 auto;
-    transition: all 0.1s;
+    transition: all 0.3s;
 }
 
 .menu-icon {
@@ -97,6 +97,7 @@
 
 .menu-icon li:nth-child(4):hover a span:before {
     color: #C91215;
+    font-size: 20px;
 }
 
 .menu-icon li a, .search-icon {
@@ -107,7 +108,7 @@
     align-items: center;
 }
 
-.menu-icon li:last-child {
+.menu-icon li:last-child, .menu-icon li:nth-child(3) {
     cursor: pointer;
 }
 
