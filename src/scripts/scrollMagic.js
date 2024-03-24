@@ -44,8 +44,8 @@ bannerTitleAnimation.from(".banner-title", {
         duration: 0.8,
         ease: 'power4.out'
     }, 2)
-    .to(".banner-circle", {
-        rotation: 0,
+    .from(".banner-circle", {
+        rotation: -40,
         duration: 0.8,
         ease: 'power4.out'
     }, 2)
