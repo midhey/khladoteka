@@ -22,24 +22,31 @@
     border-radius: 40px;
     background: #FFF;
     transform: rotate(90deg);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#playPauseBtn:after {
+#playPauseBtn:before {
     content: '';
     width: 80%;
     height: 80%;
+    position: absolute;
+    bottom: 9%;
+    border: 1px solid #e12026;
+    border-radius: 50%;
+    clip-path: circle(70% at center bottom);
+    transition: clip-path 0.5s ease-in-out; /* Добавляем анимацию перехода для clip-path */
 }
 
-#playPauseBtn .icon-triangle {
-    transform: rotate(180deg);
+#playPauseBtn:hover:before {
+    clip-path: circle(100% at center bottom); /* Изменяем clip-path при наведении */
 }
+
 
 #playPauseBtn .icon:before {
     color: #E12026
-}
-
-.ytp-button {
-    display: none!important;
 }
 
 .video-preview {
@@ -80,14 +87,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Медиа-запрос для мобильных устройств */
-@media (max-width: 768px) {
-    .video-container {
-        width: 90%; /* Уменьшаем ширину на мобильных устройствах */
-        height: 90%; /* Уменьшаем высоту на мобильных устройствах */
-    }
-}
-
 
 #close-video-popup {
     position: absolute;
@@ -118,6 +117,18 @@
 @media (min-width: 1440px) {
     .video-preview {
         height: 780px;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        width: 90%; /* Уменьшаем ширину на мобильных устройствах */
+        height: 40%; /* Уменьшаем высоту на мобильных устройствах */
+    }
+
+    #close-video-popup {
+        top: -50px;
+        right: 0;
     }
 }
 

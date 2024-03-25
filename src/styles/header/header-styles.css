@@ -256,6 +256,8 @@
         width: 25%;
         height: 100%;
         bottom: auto;
+        right: 0;
+        border: none;
     }
 
     .menu-icon li a, .search-icon {
