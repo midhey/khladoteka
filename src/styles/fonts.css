@@ -56,9 +56,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-Vector:before {
-    content: "\e925";
-}
 .icon-beer-cooler:before {
     content: "\e900";
 }
@@ -93,7 +90,7 @@
 }
 .icon-control .path2:before {
     content: "\e908";
-    margin-left: -1.5em;
+    margin-left: -1em;
     color: rgb(225, 32, 38);
 }
 .icon-freezing:before {
@@ -110,12 +107,12 @@
 }
 .icon-future-equipment .path2:before {
     content: "\e90c";
-    margin-left: -1.5em;
+    margin-left: -1em;
     color: rgb(0, 132, 191);
 }
 .icon-future-equipment .path3:before {
     content: "\e90d";
-    margin-left: -1.5em;
+    margin-left: -1em;
     color: rgb(255, 255, 255);
 }
 .icon-halfarrow:before {
@@ -159,7 +156,7 @@
 }
 .icon-preservation .path2:before {
     content: "\e918";
-    margin-left: -1.5em;
+    margin-left: -1em;
     color: rgb(0, 132, 191);
 }
 .icon-production-box:before {

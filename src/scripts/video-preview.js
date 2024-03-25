@@ -1,38 +1,35 @@
-// // main.js
-// let player;
-//
-// function onYouTubeIframeAPIReady() {
-//     player = new YT.Player('player', {
-//         height: '100%',
-//         width: '100%',
-//         playerVars : {
-//             autoplay: 0,
-//             controls: 0,
-//             rel: 0,
-//             showinfo: 0,
-//             start: 15,
-//             iv_load_policy: 3,
-//             origin: location.hostname
-//         },
-//         videoId: 'Rd5Aa7Uliy8',
-//         events: {
-//             'onReady': onPlayerReady
-//         },
-//     });
-// }
-//
-// function onPlayerReady(event) {
-//     var playPauseBtn = document.getElementById('playPauseBtn');
-//     playPauseBtn.addEventListener('click', function() {
-//         if (player.getPlayerState() == YT.PlayerState.PLAYING) {
-//             player.pauseVideo();
-//         } else {
-//             player.playVideo();
-//         }
-//     });
-// }
-//
-// document.addEventListener('DOMContentLoaded', function() {
-//     // Инициализируем YouTube IFrame API при загрузке DOM
-//     onYouTubeIframeAPIReady();
-// });
+document.addEventListener("DOMContentLoaded", function() {
+    const openButton = document.getElementById("playPauseBtn");
+    const closeButton = document.getElementById("close-video-popup");
+    const videoPopup = document.getElementById("video-popup");
+    const youtubeVideo = document.getElementById("youtube-video");
+
+    openButton.addEventListener("click", function() {
+        const videoId = "Rd5Aa7Uliy8";
+        youtubeVideo.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+        videoPopup.classList.add("active");
+        document.body.style.overflow = "hidden";
+    });
+
+    closeButton.addEventListener("click", closePopup);
+
+    videoPopup.addEventListener("click", function(event) {
+        if (event.target === videoPopup) {
+            closePopup();
+        }
+    });
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+            closePopup();
+        }
+    });
+
+    function closePopup() {
+        youtubeVideo.src = "";
+        videoPopup.classList.remove("active");
+        document.body.style.overflow = "auto";
+    }
+});
+
+
