@@ -12,6 +12,7 @@
 @import "gallery.css";
 @import "news.css";
 @import "feedback-form.css";
+@import "catalog.css";
 
 * {
     padding: 0;

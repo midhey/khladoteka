@@ -56,6 +56,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-comparison-scales:before {
+    content: "\e905";
+    color: #606060;
+}
+.icon-comparison-stick:before {
+    content: "\e906";
+    color: #606060;
+}
 .icon-lock:before {
     content: "\e925";
 }
@@ -78,14 +86,6 @@
 }
 .icon-cold-boxes:before {
     content: "\e904";
-}
-.icon-comparison:before {
-    content: "\e905";
-    color: #606060;
-}
-.icon-comparison-hover:before {
-    content: "\e906";
-    color: #0084bf;
 }
 .icon-control .path1:before {
     content: "\e907";

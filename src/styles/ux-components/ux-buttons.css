@@ -75,11 +75,12 @@
     color: #FFF;
     font-size: 16px;
     font-weight: 600;
-    transition: all 0.3s ease-in-out;
+    background: linear-gradient(180deg, #6F7580 0%, #4D5769 100%);
+    transition: background-color 0.3s ease-in-out;
 }
 
 .button-form:hover {
-    background: linear-gradient(180deg, #6F7580 0%, #4D5769 100%);
+    background: linear-gradient(180deg, #e12026 0%, #e12026 100%);
     color: #fff;
 }
 
@@ -90,5 +91,9 @@
 }
 
 .button-form span:before {
-    font-size: 8px;
+    font-size: 0px;
+}
+
+.button-form:hover span:before {
+    font-size: 18px;
 }

@@ -89,15 +89,77 @@
     color: #E12026;
 }
 
-.menu-icon li:nth-child(3):hover a span:before {
-    display: inline-block;
-    transform: scaleX(-1);
+.menu-icon .icon-heart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.menu-icon .icon-heart:before {
+    transition: all 0.3s ease;
+}
+
+.icon.icon-comparison {
+    position: relative;
+    height: 18px;
+    width: 18px;
+}
+
+.icon.icon-comparison .icon {
+    width: max-content;
+}
+
+.icon.icon-comparison .icon-comparison-stick {
+    font-size: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(360deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon.icon-comparison .icon-comparison-scales {
+    position: absolute;
+}
+
+.icon.icon-comparison .icon-comparison-scales.left-scales {
+    font-size: 9px;
+    top: 6px;
+    left: 0px;
+    transition: all 0.3s ease-in-out, font-size 0.1s ease-in-out;
+}
+
+.icon.icon-comparison .icon-comparison-scales.right-scales {
+    font-size: 10px;
+    top: 8px;
+    right: 0;
+    transition: all 0.3s ease-in-out, font-size 0.1s ease-in-out;
+}
+
+.menu-icon li:nth-child(3):hover .icon:before {
     color: #0084BF;
+}
+
+.menu-icon li:nth-child(3):hover .icon.icon-comparison .icon-comparison-stick {
+    transform: translateX(-50%) rotate(325deg);
+}
+
+.menu-icon li:nth-child(3):hover .icon.icon-comparison .icon-comparison-scales.left-scales {
+    font-size: 10px;
+    top: 8px;
+    left: 0px;
+}
+
+.menu-icon li:nth-child(3):hover .icon.icon-comparison .icon-comparison-scales.right-scales {
+    font-size: 9px;
+    top: 6px;
+    right: 0;
 }
 
 .menu-icon li:nth-child(4):hover a span:before {
     color: #C91215;
-    font-size: 20px;
+    text-shadow: -1px 0 #C91215, 0 1px #C91215, 1px 0 #C91215, 0 -1px #C91215;
 }
 
 .menu-icon li a, .search-icon {
