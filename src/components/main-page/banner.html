@@ -12,7 +12,7 @@
                     Продукция
                     <span class="icon icon-long-arrow"></span>
                 </a>
-                <div class="button button-feedback banner-title-button">
+                <div class="button button-feedback banner-title-button" data-modal-open="feedback-modal">
                     Обратная связь
                     <span class="icon icon-mail"></span>
                 </div>
@@ -70,3 +70,70 @@
         </div>
     </div>
 </div>
+
+<div class="modal" id="feedback-modal" aria-hidden="true">
+    <div class="modal_overlay" tabindex="-1">
+        <div class="modal-container feedback-modal-window" role="dialog" aria-modal="true">
+            <span class="icon icon-x-close form-x-close" data-modal-close></span>
+            <div class="block-title">
+                Обратная связь
+            </div>
+            <div class="feedback-modal-description">
+                Оставьте заявку и мы проконсультируем<br>вас по любому вопросу
+            </div>
+            <form method="get" action="" id="feedback-form" class="feedback-form">
+                <div class="feedback-select" id="feedback-purpose">
+                    <div class="select-selected">Выберите опцию</div>
+                    <div class="select-items select-hide">
+                        <div>Option 1</div>
+                        <div>Option 2</div>
+                        <div>Option 3</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label>
+                        <input type="text" placeholder="Ваше ФИО" name="fullname" required>
+                    </label>
+                    <label>
+                        <input type="text" placeholder="E-mail" name="contact" required>
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Компания" name="company" required>
+                    </label>
+                </div>
+                <textarea name="comment" placeholder="Комментарий"></textarea>
+                <div class="file-upload">
+                    <label for="fileInput" class="file-label">
+                        <span class="icon icon-upload"></span>
+                        Добавить файл
+                    </label>
+                    <input type="file" id="fileInput" name="file" multiple>
+                    <div class="file-names-container"></div>
+                </div>
+                <div class="feedback-checkboxes">
+                    <label class="cr-wrapper">
+                        <input type="checkbox" checked="checked"/>
+                        <div class="cr-input"></div>
+                        <span>Вы хотите быть в курсе последних событий? Подпишитесь на нашу новостную рассылку.</span>
+                    </label>
+                    <label class="cr-wrapper">
+                        <input type="checkbox"/>
+                        <div class="cr-input"></div>
+                        <span>Я прочитал и принимаю <a href="https://google.com">Общие условия использования и Политику конфиденциальности</a></span>
+                    </label>
+                </div>
+                <button type="submit" class="button button-form">
+                    Оставить заявку
+                    <span class="icon icon-long-arrow"></span>
+                </button>
+
+
+
+            </form>
+        </div>
+    </div>
+
+
+</div>
+

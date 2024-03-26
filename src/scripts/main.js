@@ -7,6 +7,7 @@ import './feedback-form.js'
 import './video-preview.js'
 import './articles.js'
 import './gallery-modal.js'
+import './microModal.js'
 
 
 

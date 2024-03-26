@@ -1,4 +1,5 @@
 @import "fonts.css";
+@import "reset.css";
 @import "ux-styles.css";
 @import "./header/header.css";
 @import "banner.css";

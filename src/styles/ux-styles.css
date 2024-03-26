@@ -1,5 +1,6 @@
 @import "./ux-components/ux-buttons.css";
 @import "./ux-components/ux-form.css";
+@import "./ux-components/modals.css";
 
 .block-title {
     font-family: Molot, serif;
@@ -28,10 +29,6 @@
 .container-large {
     max-width: 1440px;
     margin: 0 auto;
-}
-
-textarea {
-    resize: none;
 }
 
 @media (max-width: 320px) {

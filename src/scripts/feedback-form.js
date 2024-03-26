@@ -113,3 +113,26 @@ document.getElementById('feedback-form').addEventListener('submit', function(eve
             console.error('Произошла ошибка:', error);
         });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Весь ваш код JavaScript
+    const selectElement = document.getElementById("feedback-purpose");
+    const selectItems = selectElement.querySelector(".select-items");
+
+    selectElement.addEventListener("click", function() {
+        selectItems.classList.toggle("select-hide");
+    });
+
+    const options = selectElement.querySelectorAll(".select-items div");
+    options.forEach(option => {
+        option.addEventListener("click", function() {
+            const value = this.textContent;
+            selectElement.querySelector(".select-selected").textContent = value;
+            selectItems.classList.add("select-hide");
+        });
+    });
+});
+
+
+

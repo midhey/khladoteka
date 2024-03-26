@@ -9,7 +9,7 @@
     gap: 10px;
 }
 
-.feedback-form .row label {
+.feedback-form .row label, .feedback-form .feedback-select {
     flex: 1;
     min-height: 56px;
     padding: 10px 20px;
@@ -22,7 +22,8 @@
     flex: 1 0 0;
 }
 
-.feedback-form .row label input {
+
+.feedback-form .row label input, .feedback-form .feedback-select {
     width: 100%;
     font-family: Onest;
     box-sizing: border-box;

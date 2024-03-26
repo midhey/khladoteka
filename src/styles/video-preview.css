@@ -88,14 +88,14 @@
 }
 
 
-#close-video-popup {
+.form-x-close {
     position: absolute;
     top: -50px;
     right: -50px;
     cursor: pointer;
 }
 
-#close-video-popup:before {
+.form-x-close:before {
     font-size: 30px;
     color: white;
     z-index: 1000;
