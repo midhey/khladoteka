@@ -1,0 +1,46 @@
+@import "products-list-card-swiper.css";
+@import "products-list-card-info.css";
+@import "product-list-buttons.css";
+
+.products-list-card {
+    width: 326px;
+    height: 430px;
+    border: 1px solid #F0F0F0;
+    position: relative;
+}
+
+.products-list-card-favourite-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    gap: 10px;
+    border-radius: 40px;
+    background: #F5F5F5;
+    cursor: pointer;
+    z-index: 2;
+    transition: all .3s ease-in-out;
+}
+
+.products-list-card-favourite-button .icon:before {
+    color: #F5F5F5;
+    -webkit-text-stroke: 1px #202020;
+    transition: all .3s ease-in-out;
+}
+
+.products-list-card-favourite-button:hover .icon:before {
+    color: #FFF;
+    -webkit-text-stroke-color: #FFF;
+}
+
+.products-list-card-favourite-button:hover {
+    background: #E12026;
+}
+
+
+

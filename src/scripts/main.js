@@ -8,6 +8,7 @@ import './video-preview.js'
 import './articles.js'
 import './gallery-modal.js'
 import './microModal.js'
+import './catalog.js'
 
 
 
@@ -48,6 +49,8 @@ dropdownBtns.forEach((btn, index) => {
         event.stopPropagation(); // Останавливаем всплытие события, чтобы оно не передавалось родительским элементам
     });
 });
+
+
 
 
 

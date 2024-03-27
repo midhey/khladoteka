@@ -148,13 +148,13 @@
 .menu-icon li:nth-child(3):hover .icon.icon-comparison .icon-comparison-scales.left-scales {
     font-size: 10px;
     top: 8px;
-    left: 0px;
+    left: 1px;
 }
 
 .menu-icon li:nth-child(3):hover .icon.icon-comparison .icon-comparison-scales.right-scales {
     font-size: 9px;
     top: 6px;
-    right: 0;
+    right: -1px;
 }
 
 .menu-icon li:nth-child(4):hover a span:before {
@@ -336,13 +336,25 @@
     .menu-icon li .icon, .menu-icon li .icon:before {
         width: 100%;
         text-align: center;
+        align-items: center;
+    }
+
+    .menu-icon li .icon-comparison {
+        width: 18px;
+        margin: 0;
+    }
+
+    .top-menu-ul .comparison-link {
+        flex-direction: column;
+        gap: 6px;
+        justify-content: center;
     }
 
     .scroll-to-top-btn span, .scroll-to-top-btn span:before {
         height: 100%;
     }
 
-    .menu-icon li span:after {
+    .menu-icon li span:after, .comparison-link:after {
         color: #202020;
         font-family: Onest;
         font-size: 10px;
@@ -351,9 +363,8 @@
         line-height: normal;
     }
 
-    .menu-icon li .icon-comparison:after {
+    .menu-icon li .comparison-link:after {
         content: "Сравнение";
-
     }
 
     .menu-icon li .icon-heart:after {

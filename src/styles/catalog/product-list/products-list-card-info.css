@@ -1,0 +1,39 @@
+.products-list-card-info {
+    font-family: Onest, serif;
+    padding: 10px 20px 12px;
+}
+
+.product-name {
+    color: #202020;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+}
+
+.product-description {
+    color: #808080;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.product-cost-block {
+    color: #C0C0C0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-cost-title {
+    color: #202020;
+    font-size: 16px;
+    font-weight: 600;
+}

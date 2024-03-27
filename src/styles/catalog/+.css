@@ -1,1 +1,5 @@
 @import "breadcrumbs.css";
+@import "catalog-filter.css";
+@import "catalog-title.css";
+@import "product-list/+.css";
+@import "products-list.css";

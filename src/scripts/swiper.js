@@ -1,10 +1,11 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 // import Swiper styles
-import 'swiper/css';
+import 'swiper/css/bundle';
+
 
 // init Swiper:
-var newsSwiper = new Swiper(".newsSwiper", {
+const newsSwiper = new Swiper(".newsSwiper", {
     modules: [Navigation],
     slidesPerView: 1.1,
     spaceBetween: 20,
@@ -20,7 +21,7 @@ var newsSwiper = new Swiper(".newsSwiper", {
     }
 });
 
-var gallerySwiper = new Swiper(".gallerySwiper", {
+const gallerySwiper = new Swiper(".gallerySwiper", {
     modules: [Navigation, Pagination],
     slidesPerView: 1.1,
     spaceBetween: 6,
@@ -41,5 +42,13 @@ var gallerySwiper = new Swiper(".gallerySwiper", {
     }
 });
 
-
+const productsListCardSwiper = new Swiper(".products-list-card-swiper", {
+    modules: [Pagination],
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+        el: ".products-list-swiper-pagination",
+        clickable: true,
+    },
+})
 
